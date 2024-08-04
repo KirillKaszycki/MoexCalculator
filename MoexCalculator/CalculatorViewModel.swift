@@ -42,3 +42,4 @@ final class CalculatorViewModel: ObservableObject {
         bottomAmount = model.convert(topAmount, to: bottomCurrency)
     }
 }
+
