@@ -11,7 +11,8 @@ struct CurrencyInput: View {
     
     var currency: Currency
     var amount: Double
-    var calculator: (Double) -> Void
+    let calculator: (Double) -> Void
+    let tapHandler: () -> Void
     
     var numberFormatter: NumberFormatter = { // 13
         var nf = NumberFormatter()
@@ -33,6 +34,7 @@ struct CurrencyInput: View {
                     .font(.title2)
             }
             .frame(height: 100)
+            .onTapGesture(perform: tapHandler)
             
             let binding = Binding<Double> (
                 get: {
@@ -57,7 +59,8 @@ struct CurrencyInput_Previewvs: PreviewProvider {
         CurrencyInput(
             currency: .RUB,
             amount: 1000,
-            calculator: { _ in }
+            calculator: { _ in },
+            tapHandler: {}
         )
     }
 }
