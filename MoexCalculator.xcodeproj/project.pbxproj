@@ -17,6 +17,7 @@
 		E3831B1F2C5F69170025DCC4 /* CalculatorModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = E3831B1E2C5F69170025DCC4 /* CalculatorModel.swift */; };
 		E3831B212C5F6A3A0025DCC4 /* CalculatorViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = E3831B202C5F6A3A0025DCC4 /* CalculatorViewModel.swift */; };
 		E3831B232C5F6C600025DCC4 /* CalculatorView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E3831B222C5F6C600025DCC4 /* CalculatorView.swift */; };
+		E3C5DB762C5F9D1900E529FB /* CurrencyInput.swift in Sources */ = {isa = PBXBuildFile; fileRef = E3C5DB752C5F9D1900E529FB /* CurrencyInput.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -50,6 +51,7 @@
 		E3831B1E2C5F69170025DCC4 /* CalculatorModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CalculatorModel.swift; sourceTree = "<group>"; };
 		E3831B202C5F6A3A0025DCC4 /* CalculatorViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CalculatorViewModel.swift; sourceTree = "<group>"; };
 		E3831B222C5F6C600025DCC4 /* CalculatorView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CalculatorView.swift; sourceTree = "<group>"; };
+		E3C5DB752C5F9D1900E529FB /* CurrencyInput.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CurrencyInput.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -100,10 +102,10 @@
 		E3831AF12C5F65A50025DCC4 /* MoexCalculator */ = {
 			isa = PBXGroup;
 			children = (
-				E3831B1E2C5F69170025DCC4 /* CalculatorModel.swift */,
 				E3831AF22C5F65A50025DCC4 /* MoexCalculatorApp.swift */,
 				E3831B1C2C5F68160025DCC4 /* Currency.swift */,
-				E3831B222C5F6C600025DCC4 /* CalculatorView.swift */,
+				E3C5DB782C5FA31A00E529FB /* View */,
+				E3C5DB772C5FA30C00E529FB /* Model */,
 				E3831B202C5F6A3A0025DCC4 /* CalculatorViewModel.swift */,
 				E3831AF62C5F65A70025DCC4 /* Assets.xcassets */,
 				E3831AF82C5F65A70025DCC4 /* Preview Content */,
@@ -134,6 +136,23 @@
 				E3831B0F2C5F65A70025DCC4 /* MoexCalculatorUITestsLaunchTests.swift */,
 			);
 			path = MoexCalculatorUITests;
+			sourceTree = "<group>";
+		};
+		E3C5DB772C5FA30C00E529FB /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				E3831B1E2C5F69170025DCC4 /* CalculatorModel.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		E3C5DB782C5FA31A00E529FB /* View */ = {
+			isa = PBXGroup;
+			children = (
+				E3C5DB752C5F9D1900E529FB /* CurrencyInput.swift */,
+				E3831B222C5F6C600025DCC4 /* CalculatorView.swift */,
+			);
+			path = View;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -269,6 +288,7 @@
 				E3831B1D2C5F68160025DCC4 /* Currency.swift in Sources */,
 				E3831B232C5F6C600025DCC4 /* CalculatorView.swift in Sources */,
 				E3831B1F2C5F69170025DCC4 /* CalculatorModel.swift in Sources */,
+				E3C5DB762C5F9D1900E529FB /* CurrencyInput.swift in Sources */,
 				E3831AF32C5F65A50025DCC4 /* MoexCalculatorApp.swift in Sources */,
 				E3831B212C5F6A3A0025DCC4 /* CalculatorViewModel.swift in Sources */,
 			);
