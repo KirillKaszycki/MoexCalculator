@@ -79,6 +79,14 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		E337CB5C2C5FB43600093978 /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				E3831B202C5F6A3A0025DCC4 /* CalculatorViewModel.swift */,
+			);
+			path = ViewModel;
+			sourceTree = "<group>";
+		};
 		E3831AE62C5F65A50025DCC4 = {
 			isa = PBXGroup;
 			children = (
@@ -104,9 +112,9 @@
 			children = (
 				E3831AF22C5F65A50025DCC4 /* MoexCalculatorApp.swift */,
 				E3831B1C2C5F68160025DCC4 /* Currency.swift */,
-				E3C5DB782C5FA31A00E529FB /* View */,
 				E3C5DB772C5FA30C00E529FB /* Model */,
-				E3831B202C5F6A3A0025DCC4 /* CalculatorViewModel.swift */,
+				E3C5DB782C5FA31A00E529FB /* View */,
+				E337CB5C2C5FB43600093978 /* ViewModel */,
 				E3831AF62C5F65A70025DCC4 /* Assets.xcassets */,
 				E3831AF82C5F65A70025DCC4 /* Preview Content */,
 			);
