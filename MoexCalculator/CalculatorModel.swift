@@ -6,3 +6,24 @@
 //
 
 import Foundation
+
+struct CalculatorModel {
+    private(set) var currenceRates: CurrencyRates = [.RUB: 1, .CNY: 12]
+    
+    mutating func setCurrencyRates(_ currencyRates: CurrencyRates) {
+        self.currenceRates = currencyRates
+    }
+    
+    func convert(_ source: CurrencyAmount, to target: Currency) -> Double {
+        guard
+            let sourceRate = currenceRates[source.currency],
+            let targetRate = currenceRates[target]
+        else { return 0 }
+        
+        if targetRate.isZero {
+            return 0
+        } else {
+            return source.amount * sourceRate / targetRate
+        }
+    }
+}
